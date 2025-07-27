@@ -16,8 +16,8 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
+API_ID = int(environ.get("API_ID", "27332436"))
+API_HASH = environ.get("API_HASH", "e4e48674defb04a12d480bed130c5243")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 PORT = environ.get("PORT", "8082")
 
@@ -29,24 +29,24 @@ ADMINS = [
 OWNER_USERNAME = environ.get(
     "OWNER_USERNAME", "IM_JISSHU"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "mxf5a")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
     int(ch) if id_pattern.search(ch) else ch
-    for ch in environ.get("CHANNELS", "").split()
+    for ch in environ.get("CHANNELS", "-1002093257601").split()
 ]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", ""))
-AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", ""))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
+AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002814321409"))
+AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002627177124"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002627177124"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002627177124"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002627177124"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://admin:aditya1234@aditya.ucgmk91.mongodb.net/?retryWrites=true&w=majority&appName=aditya")
+DATABASE_NAME = environ.get("DATABASE_NAME", "aditya")
 
 # Files index database url
 FILES_DATABASE = environ.get("FILES_DATABASE", "")
