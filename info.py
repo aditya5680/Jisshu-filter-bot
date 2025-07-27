@@ -38,18 +38,18 @@ CHANNELS = [
 ]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002814321409"))
-AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002627177124"))
+AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "0"))
+AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "0"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002627177124"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002627177124"))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002627177124"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "0"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "0"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://admin:aditya1234@aditya.ucgmk91.mongodb.net/?retryWrites=true&w=majority&appName=aditya")
 DATABASE_NAME = environ.get("DATABASE_NAME", "aditya")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://admin:aditya1234@aditya.ucgmk91.mongodb.net/?retryWrites=true&w=majority&appName=aditya")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
