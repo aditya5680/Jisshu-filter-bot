@@ -45,7 +45,7 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "0"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "0"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://admin:aditya1234@aditya.ucgmk91.mongodb.net/?retryWrites=true&w=majority&appName=aditya")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aditya:aditya1234@aditya.oenc87d.mongodb.net/?retryWrites=true&w=majority&appName=aditya")
 DATABASE_NAME = environ.get("DATABASE_NAME", "aditya")
 
 # Files index database url
@@ -76,8 +76,8 @@ TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg"
 )
-SHORTENER_API = environ.get("SHORTENER_API", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
+SHORTENER_API = environ.get("SHORTENER_API", "f89863c94fd298ca69534bb3c1ffd5f63bf2ba5f")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "papajiurl.com")
 SHORTENER_API2 = environ.get(
     "SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799"
 )
