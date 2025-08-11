@@ -1537,7 +1537,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "ʀᴇᴘᴏ", url="https://github.com/JisshuTG/Jisshu-filter-bot"
+                    "ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/mxf5a"
                 )
             ],
             [
