@@ -45,11 +45,11 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "0"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "0"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aditya56:aditya12345@aditya56.sdp9fjv.mongodb.net/?retryWrites=true&w=majority&appName=aditya56")
-DATABASE_NAME = environ.get("DATABASE_NAME", "aditya56")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aditya07:aditya08@aditya07.qnidhgv.mongodb.net/?retryWrites=true&w=majority&appName=aditya07")
+DATABASE_NAME = environ.get("DATABASE_NAME", "aditya07")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://aditya56:aditya12345@aditya56.sdp9fjv.mongodb.net/?retryWrites=true&w=majority&appName=aditya56")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://aditya07:aditya08@aditya07.qnidhgv.mongodb.net/?retryWrites=true&w=majority&appName=aditya07")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
@@ -61,7 +61,7 @@ REQUEST_CHANNEL = (
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1001864434358"))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002142588188"))
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/+Gt7X4PWT4yphMmE1")
