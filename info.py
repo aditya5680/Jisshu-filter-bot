@@ -34,7 +34,7 @@ USERNAME = environ.get("USERNAME", "mxf5a")  # ADMIN USERNAME
 # Database Channel
 CHANNELS = [
     int(ch) if id_pattern.search(ch) else ch
-    for ch in environ.get("CHANNELS", "-1002142588188").split()
+    for ch in environ.get("CHANNELS", "-1002093257601").split()
 ]
 
 # ForceSub Channel & Log Channels
@@ -45,11 +45,11 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "0"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "0"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aditya295:aditya0295@aditya99.fese7to.mongodb.net/?retryWrites=true&w=majority&appName=aditya99")
-DATABASE_NAME = environ.get("DATABASE_NAME", "aditya99")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://mafia01:mafia001@cluster0.paebxrj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://aditya295:aditya0295@aditya99.fese7to.mongodb.net/?retryWrites=true&w=majority&appName=aditya99")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://mafia01:mafia001@cluster0.paebxrj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
@@ -61,7 +61,7 @@ REQUEST_CHANNEL = (
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002142588188"))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002093257601"))
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/+Gt7X4PWT4yphMmE1")
@@ -149,7 +149,7 @@ FILE_AUTO_DEL_TIMER = int(environ.get("FILE_AUTO_DEL_TIMER", "600"))
 AUTO_FILTER = is_enabled("AUTO_FILTER", True)
 IS_PM_SEARCH = is_enabled("IS_PM_SEARCH", False)
 IS_SEND_MOVIE_UPDATE = is_enabled(
-    "IS_SEND_MOVIE_UPDATE", False
+    "IS_SEND_MOVIE_UPDATE", True
 )  # Don't Change It ( If You Want To Turn It On Then Turn It On By Commands) We Suggest You To Make It Turn Off If You Are Indexing Files First Time.
 MAX_BTN = int(environ.get("MAX_BTN", "8"))
 AUTO_DELETE = is_enabled("AUTO_DELETE", True)
