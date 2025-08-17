@@ -90,6 +90,65 @@
   <!-- Footer is now generated via JavaScript -->
   </div>
   
+  <!-- 🔥 MAFIA Watermark -->
+  <div id="mafia-watermark">
+    <div class="marquee">
+      <span>
+        ⚡ <a href="https://t.me/mxf5a" target="_blank">Developed by MAFIA</a><br>
+        🔥 <a href="https://t.me/mxf5a" target="_blank">Powered by MAFIA BOTS</a>
+      </span>
+    </div>
+  </div>
+
+  <style>
+  #mafia-watermark {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  #mafia-watermark .marquee {
+    display: inline-block;
+    animation: mafiaBounce 8s linear infinite;
+    width: 100%;
+    text-align: center;
+  }
+
+  #mafia-watermark span {
+    display: inline-block;
+    background: rgba(0, 0, 50, 0.9);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 15px rgba(0, 200, 255, 0.7);
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  #mafia-watermark a {
+    color: #00f0ff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #mafia-watermark a:hover {
+    color: #ff4444;
+  }
+
+  @keyframes mafiaBounce {
+    0%, 100% {
+      transform: translateX(-10%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+  }
+  </style>
+  
   <!-- External JS -->
   <script src="https://developer-six-dusky.vercel.app/548/551/play.js"></script>
   <script>
